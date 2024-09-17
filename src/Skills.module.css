@@ -1,0 +1,76 @@
+.skills_outer{
+  background: linear-gradient(100deg, #04043b,#141414); /* Black to Dark Blue */
+  margin-top: 0;
+  text-align: center;
+  font-family: "Balsamiq Sans";
+  /* overflow: hidden; */
+  display: flex;
+  /* width: 100vw; */
+  box-sizing: border-box;
+  width: calc(100vw - 16px);
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  padding: 0;
+
+}
+.skills_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  max-width: 70%;
+  background-color: black;
+  border-radius: 30px;
+  padding: 30px;
+  padding-bottom: 10px;
+  /* overflow: hidden; */
+  width: 70%;
+  margin-bottom: 20px;
+  /* position: relative; */
+}
+
+.skills_list {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.skill_item {
+  text-align: center;
+  color: white;
+  width: 150px;
+  margin: 0 65px; /* Add some space between skill items */
+  flex-shrink: 0; /* Prevent skill items from shrinking */
+}
+.skillName{
+  color:white;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.scroll_btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.scroll_btn:hover {
+  color: #a45de8;
+}
+
+/* .scroll_btn:first-of-type {
+  position: absolute;
+  left: 0;
+}
+
+.scroll_btn:last-of-type {
+  position: absolute;
+  right: 0;
+} */

@@ -1,0 +1,140 @@
+body {
+  /* font-family: "Arapey"; */
+  margin: 0;
+  font-family: "Balsamiq Sans";
+  padding: 0;
+  overflow-x: hidden;
+
+  background-color: #f4f4f4;
+  color: #333;
+  width: 100%;
+}
+
+header {
+  color: white;
+  background-color: rgba(128, 0, 128, 0.3);
+  border-bottom: 1px solid white; /* 1px solid white border */
+  border-top: 1px solid white; /* 1px solid white border */
+
+  display: flex;
+  width: 100%;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+}
+
+.nav1 ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+}
+
+.nav1 ul li {
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.nav1 ul li a {
+  color: lightgrey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav1 ul li a.active {
+  color: white;
+  font-size: larger;
+  text-decoration: underline;
+}
+
+.nav2 ul {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+  justify-content: right;
+  padding: 0;
+}
+
+.nav2 ul li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.nav2 ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid white;
+}
+.box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border: 50%;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.box:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.icon {
+  color: white;
+  position: relative;
+  z-index: 1; /* Ensure the icon is above the pseudo-element */
+  transition: color 0.3s ease;
+}
+.box:hover .icon {
+  color: black;
+}
+
+.section {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  width: 80%;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+.socialLinks a {
+  color: #0077b5;
+  margin: 0 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
