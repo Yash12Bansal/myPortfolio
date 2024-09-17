@@ -7,7 +7,6 @@ import ipdf from "./img/ipdf-removebg-preview.png";
 import gify from "./img/gify-removebg-preview.png";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Typical from "react-typical";
 const images = [messiah, t1life, choti, ipdf, gify];
 import ReactTypingEffect from "react-typing-effect";
 // Helper function to get random positions
